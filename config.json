@@ -1,28 +1,27 @@
 {
     "Components": {
-            "dd_servo": {
-                "Name": "dd_servo",
-                "git": "https://github.com/ML-ES-Platform/dd_servo.git",
-                "Path": "ESW/dd_servo/",
-                "Groups": {
-                    "dd_servo": {
-                        "Name": "DD_SERVO",
-                        "NameSpace": "dd_servo",
-                        "Multiplicity": "0-*",
-                        "Push": [
-                            "DDSERVO_SetAngle"
-                        ],
-                        "Pull": [],
-                        "Dependencies": [
-                            "dd_pca9685", "mcal_pwm"
-                        ],
-                        "Channels": {
-                            "Multiplicity": "1-*",
-                            "NameSpace": "DD_SERVO"
-                        },
-                        "Defines": {}
-                    }
+        "dd_servo": {
+            "git": "https://github.com/ML-ES-Platform/dd_servo.git",
+            "Path": "ESW/dd_servo/",
+            "Groups": {
+                "dd_servo": {
+                    "NameSpace": "dd_servo",
+                    "Multiplicity": "0-*",
+                    "Push": [
+                        "DDSERVO_SetAngle"
+                    ],
+                    "Pull": [],
+                    "Dependency": [
+                        "dd_pca9685",
+                        "mcal_pwm"
+                    ],
+                    "Channels": {
+                        "Multiplicity": "1-*",
+                        "NameSpace": "DD_SERVO"
+                    },
+                    "Defines": {}
                 }
             }
+        }
     }
 }
