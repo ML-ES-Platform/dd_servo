@@ -8,13 +8,13 @@
 #ifndef _DD_SERVO_CFG_H_
 #define _DD_SERVO_CFG_H_
 
-#include "platform_config.h"
+#include "./PLF/platform_config.h"
 
 #ifndef DD_SERVO_CONFIG
 #define DD_SERVO_CONFIG
 //for demo application purpose
 //shall be defined in the platform
-enum DD_SERVO_IdType {DD_SERVO_1,DD_SERVO_2, DD_SERVO_3, DD_SERVO_4, DD_SERVO_CHANNEL_NR_OF};
+enum DD_SERVO_Cnl_IdType {DD_SERVO_1,DD_SERVO_2, DD_SERVO_3, DD_SERVO_4, DD_SERVO_CHANNEL_NR_OF};
 #endif
 
 

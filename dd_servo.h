@@ -11,7 +11,7 @@
 #include "dd_servo_cfg.h"
 
 #ifndef DD_SERVO_CONFIG
-enum DD_SERVO_IdType {DD_SERVO_CHANNEL_NR_OF = 0 };
+enum DD_SERVO_Cnl_IdType {DD_SERVO_CHANNEL_NR_OF = 0 };
 #endif
 
 
